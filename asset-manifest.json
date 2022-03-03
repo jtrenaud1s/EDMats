@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EDMats/static/css/main.56e6221f.css",
-    "main.js": "/EDMats/static/js/main.d75f6774.js",
+    "main.js": "/EDMats/static/js/main.c863cb24.js",
     "index.html": "/EDMats/index.html",
     "main.56e6221f.css.map": "/EDMats/static/css/main.56e6221f.css.map",
-    "main.d75f6774.js.map": "/EDMats/static/js/main.d75f6774.js.map"
+    "main.c863cb24.js.map": "/EDMats/static/js/main.c863cb24.js.map"
   },
   "entrypoints": [
     "static/css/main.56e6221f.css",
-    "static/js/main.d75f6774.js"
+    "static/js/main.c863cb24.js"
   ]
 }
