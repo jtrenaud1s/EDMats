@@ -8,7 +8,7 @@ import EncodedMaterialView from "./views/EncodedMaterialView";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/EDMats">
         <Routes>
           <Route path="/" element={<HomeView />}/>
           <Route path="/raw" element={<RawMaterialView />} />
