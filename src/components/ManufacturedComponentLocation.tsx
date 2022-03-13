@@ -30,7 +30,6 @@ const ManufacturedComponentLocation = ({material}: IManufacturedComponentLocatio
         </Card.Header>
         {material.requirements ? (
           <Card.Body className="d-flex flex-column">
-            <strong>System Requirements</strong>
             <small>
               <strong>Allegiance: </strong>
               <span className="text-muted">
