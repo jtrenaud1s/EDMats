@@ -2,11 +2,11 @@ import { ManufacturedMaterial, RawMaterialSystem } from "../interfaces";
 
 export const manufacturedMaterials: ManufacturedMaterial[] = [
   {
-    name: "Core Dynamics",
+    name: "Core Dynamics Composites",
     requirements: {
       allegiance: ["Federation"],
       population: "High",
-      states: ["War", "Civil War"],
+      states: ["None"],
     },
   },
   {
@@ -122,3 +122,49 @@ export const rawMaterialSystems: RawMaterialSystem[] = [
     ],
   },
 ];
+
+export const allegiances = {
+  "Any": "",
+  "Alliance": 1,
+  "Empire": 2,
+  "Federation": 3,
+  "Guardian": 4,
+  "Independent": 5,
+  "None": 6,
+  "Pilots Federation": 7,
+  "Pirate": 8,
+  "Thargoid": 9,
+}
+
+export const states = {
+  "Any": "",
+  "Blight": 102,
+  "Bust": 32,
+  "Boom": 16,
+  "Civil Liberty": 66,
+  "Civil Unrest": 48,
+  "Civil War": 64,
+  "Cold War": 108,
+  "Colonisation": 109,
+  "Damaged": 15,
+  "Drought": 103,
+  "Election": 65,
+  "Expansion": 67,
+  "Famine": 37,
+  "Historic Event": 110,
+  "Infrastructure Failure": 104,
+  "Investment": 101,
+  "Lockdown": 69,
+  "Natural Disaster": 105,
+  "None": 80,
+  "Outbreak": 72,
+  "Pirate Attack": 81,
+  "Public Holiday": 106,
+  "Retreat": 96,
+  "Revolution": 111,
+  "Technological Leap": 112, 
+  "Terrorist Attack": 107,
+  "Trade War": 113,
+  "Under Repairs": 14,
+  "War": 73
+}

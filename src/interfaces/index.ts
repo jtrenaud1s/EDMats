@@ -1,4 +1,4 @@
-export type SystemState = "None" | "Boom" | "Outbreak" | "Election" | "War" | "Civil War" | "Civil Unrest";
+export type SystemState = "Any" | "None" | "Boom" | "Outbreak" | "Election" | "War" | "Civil War" | "Civil Unrest";
 export type Allegiance = "Federation" | "Alliance" | "Empire" | "Independent" | "Any";
 export type Population = "High" | "Low" | "Any";
 

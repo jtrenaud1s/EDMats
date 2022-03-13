@@ -1,7 +1,9 @@
 import React from "react";
-import { Alert, Row, Col, Card } from "react-bootstrap";
+import { Alert, Row } from "react-bootstrap";
 import { manufacturedMaterials } from "../data";
 import MainLayout from "../layout/MainLayout";
+import ManufacturedComponentLocation from "../components/ManufacturedComponentLocation";
+
 
 const ManufacturedMaterialView = () => {
   return (
@@ -52,36 +54,7 @@ const ManufacturedMaterialView = () => {
       <Row>
         {manufacturedMaterials.map((material, id) => {
           return (
-            <Col key={id} sm={12} md={4} lg={3} className="mb-3">
-              <Card>
-                <Card.Header>{material.name}</Card.Header>
-                {material.requirements ? (
-                  <Card.Body className="d-flex flex-column">
-                    <strong>System Requirements</strong>
-                    <small>
-                      <strong>Allegiance: </strong>
-                      <span className="text-muted">
-                        {material.requirements.allegiance.join(', ')}
-                      </span>
-                    </small>
-                    <small>
-                      <strong>Population: </strong>
-                      <span className="text-muted">
-                        {material.requirements.population}
-                      </span>
-                    </small>
-                    <small>
-                      <strong>State(s): </strong>
-                      <span className="text-muted">
-                        {material.requirements.states.join(", ")}
-                      </span>
-                    </small>
-                  </Card.Body>
-                ) : (
-                  <Card.Body>{material.notes}</Card.Body>
-                )}
-              </Card>
-            </Col>
+            <ManufacturedComponentLocation material={material} key={id} />
           );
         })}
       </Row>
