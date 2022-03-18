@@ -37,7 +37,7 @@ const RawMaterialView = () => {
       <h2>Method 2</h2>
       <Alert variant="warning">
         These planets are very far away from the bubble, so make sure your ship
-        has great jump range. Before you leave, Dock up at a station with a raw
+        has a jump range of at a bare minimum, 37 Ly. Before you leave, Dock up at a station with a raw
         material trader. When you're done gathering the materials, blow your
         ship up (if you can afford it) and you'll respawn with your rebuy at the
         station you docked up in.
