@@ -118,7 +118,7 @@ export const rawMaterialSystems: RawMaterialSystem[] = [
   {
     name: "LHS 417",
     materials: [
-      { name: "Selenium", location: "9 E A", site: "Any Geological Site" },
+      { name: "Selenium", location: "9 E A", site: "Geological Sites [17], [19], [20], [22], [23], [25], [26]" },
     ],
   },
 ];
