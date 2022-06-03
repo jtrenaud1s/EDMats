@@ -25,6 +25,9 @@ const NavBar = () => {
             <Nav.Link as={NavLink} to="/encoded">
               Encoded Materials
             </Nav.Link>
+            <Nav.Link as={NavLink} to="/guardian">
+              Guardian Materials
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

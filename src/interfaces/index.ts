@@ -1,5 +1,18 @@
-export type SystemState = "Any" | "None" | "Boom" | "Outbreak" | "Election" | "War" | "Civil War" | "Civil Unrest";
-export type Allegiance = "Federation" | "Alliance" | "Empire" | "Independent" | "Any";
+export type SystemState =
+  | "Any"
+  | "None"
+  | "Boom"
+  | "Outbreak"
+  | "Election"
+  | "War"
+  | "Civil War"
+  | "Civil Unrest";
+export type Allegiance =
+  | "Federation"
+  | "Alliance"
+  | "Empire"
+  | "Independent"
+  | "Any";
 export type Population = "High" | "Low" | "Any";
 
 export interface SystemRequirements {
@@ -23,4 +36,17 @@ export interface RawMaterial {
 export interface RawMaterialSystem {
   name: string;
   materials: RawMaterial[];
+}
+
+export interface GuardianMaterialSystem {
+  name: string;
+  location: string;
+  site: string;
+  images: Image[];
+  materials: string[];
+}
+
+export interface Image {
+  title: string;
+  url: string;
 }

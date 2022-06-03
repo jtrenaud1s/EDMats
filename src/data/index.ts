@@ -1,4 +1,8 @@
-import { ManufacturedMaterial, RawMaterialSystem } from "../interfaces";
+import {
+  GuardianMaterialSystem,
+  ManufacturedMaterial,
+  RawMaterialSystem,
+} from "../interfaces";
 
 export const manufacturedMaterials: ManufacturedMaterial[] = [
   {
@@ -118,53 +122,113 @@ export const rawMaterialSystems: RawMaterialSystem[] = [
   {
     name: "LHS 417",
     materials: [
-      { name: "Selenium", location: "9 E A", site: "Geological Sites [17], [19], [20], [22], [23], [25], [26]" },
+      {
+        name: "Selenium",
+        location: "9 E A",
+        site: "Geological Sites [17], [19], [20], [22], [23], [25], [26]",
+      },
     ],
   },
 ];
 
 export const allegiances = {
-  "Any": "",
-  "Alliance": 1,
-  "Empire": 2,
-  "Federation": 3,
-  "Guardian": 4,
-  "Independent": 5,
-  "None": 6,
+  Any: "",
+  Alliance: 1,
+  Empire: 2,
+  Federation: 3,
+  Guardian: 4,
+  Independent: 5,
+  None: 6,
   "Pilots Federation": 7,
-  "Pirate": 8,
-  "Thargoid": 9,
-}
+  Pirate: 8,
+  Thargoid: 9,
+};
 
 export const states = {
-  "Any": "",
-  "Blight": 102,
-  "Bust": 32,
-  "Boom": 16,
+  Any: "",
+  Blight: 102,
+  Bust: 32,
+  Boom: 16,
   "Civil Liberty": 66,
   "Civil Unrest": 48,
   "Civil War": 64,
   "Cold War": 108,
-  "Colonisation": 109,
-  "Damaged": 15,
-  "Drought": 103,
-  "Election": 65,
-  "Expansion": 67,
-  "Famine": 37,
+  Colonisation: 109,
+  Damaged: 15,
+  Drought: 103,
+  Election: 65,
+  Expansion: 67,
+  Famine: 37,
   "Historic Event": 110,
   "Infrastructure Failure": 104,
-  "Investment": 101,
-  "Lockdown": 69,
+  Investment: 101,
+  Lockdown: 69,
   "Natural Disaster": 105,
-  "None": 80,
-  "Outbreak": 72,
+  None: 80,
+  Outbreak: 72,
   "Pirate Attack": 81,
   "Public Holiday": 106,
-  "Retreat": 96,
-  "Revolution": 111,
-  "Technological Leap": 112, 
+  Retreat: 96,
+  Revolution: 111,
+  "Technological Leap": 112,
   "Terrorist Attack": 107,
   "Trade War": 113,
   "Under Repairs": 14,
-  "War": 73
-}
+  War: 73,
+};
+
+export const guardianMaterialSystems: GuardianMaterialSystem[] = [
+  {
+    name: "Vela Dark Region KR-W C1-24",
+    location: "7 A",
+    site: "Ancient Ruins [2]",
+    images: [
+      {
+        title: "Where to be",
+        url: "https://i.imgur.com/yhi14ut.jpg",
+      },
+    ],
+    materials: [
+      "Pattern Alpha Obelisk Data",
+      "Pattern Beta Obelisk Data",
+      "Pattern Gamma Obelisk Data",
+      "Pattern Delta Obelisk Data",
+      "Pattern Epsilon Obelisk Data",
+    ],
+  },
+  {
+    name: "Synuefe NL-N C23-4",
+    location: "B 3",
+    site: "Guardian Structure",
+    images: [
+      {
+        title: "Map",
+        url: "https://imgur.com/a/DDqhoqA",
+      },
+    ],
+    materials: [
+      "Guardian Module Blueprint",
+      "Guardian Technology Components",
+      "Guardian Power Cells",
+      "Guardian Power Conduits",
+      "Guardian Sentinel Weapons Parts",
+      "Guardian Sentinel Wreckage Components",
+    ],
+  },
+  {
+    name: "Synuefe EU-Q C21-10",
+    location: "A 3",
+    site: "Gaurdian Ruins",
+    images: [
+      {
+        title: "Landing Spots",
+        url: "https://i.imgur.com/g6Wft6D.jpg",
+      },
+      {
+        title: "Pylon Locations",
+        url: "https://i.imgur.com/dMC5RAl.jpg",
+      },
+    ],
+    materials: ["Guardian Weapons Blueprint"],
+  },
+];
